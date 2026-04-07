@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Filter</title>
+  <link rel="stylesheet" href="header.css" />
+  <link rel="stylesheet" href="productFilter.css">
+</head>
+<body>
+    <header>
+      <nav>
+          <h2>Experiment 2</h2>
+          <ul>
+              <li><a href="/index.html" target="_blank" >Experiment 2.1</a></li>
+              <li><a href="/productFilter.html" target="_blank">Experiment 2.2</a></li>
+              <li><a href="/mouseDrawing.html" target="_blank">Experiment 2.3</a></li>
+          </ul>
+      </nav>
+  </header>
+  <div class="container">
+    <h1>Product Filter</h1>
+    <label for="categoryFilter">Filter by:</label>
+    <select id="categoryFilter">
+      <option value="all">All Products</option>
+      <option value="electronics">Electronics</option>
+      <option value="clothing">Clothing</option>
+    </select>
+
+    <div id="productList" class="product-list"></div>
+  </div>
+</body>
+<script src="productFilter.js"></script>
+</html>

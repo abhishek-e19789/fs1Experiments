@@ -1,0 +1,43 @@
+.container{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    font-size: 34px;
+}
+#heading{
+    font-size: 98px;
+}
+#field{
+    border-radius: 12px;
+    height: 34px;
+    width: 75%;
+}
+.error{
+    color:red;
+    font-size: 23px;
+    visibility: hidden;
+}
+
+#field{
+    text-decoration: none;
+}
+.button{
+ display: flex;
+ margin-top: 4px;
+ justify-content: space-around;
+}
+
+.inbutton{
+    height: 70px;
+    width: 40%;
+    color:aliceblue;
+    border: none;
+    border-radius: 10px;
+}

@@ -1,0 +1,17 @@
+config:
+  target: "http://localhost:3000"
+  phases:
+    - duration: 60
+      arrivalRate: 20
+scenarios:
+  - flow:
+      - post:
+          url: "/lock-seat"
+          json:
+            seatId: 1
+            userId: "{{ $randomNumber(1,1000) }}"
+      - post:
+          url: "/confirm-seat"
+          json:
+            seatId: 1
+            userId: "{{ $randomNumber(1,1000) }}"
