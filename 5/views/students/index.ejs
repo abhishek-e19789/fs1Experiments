@@ -1,0 +1,7 @@
+<h1>Students</h1>
+<ul>
+  <% students.forEach(student => { %>
+    <li><%= student.name %> - <%= student.course %></li>
+  <% }) %>
+</ul>
+<a href="/students/new">Add Student</a>
